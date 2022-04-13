@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SanitySuite" thread-count="2" parallel="tests">
+<listeners>
+		<listener
+			class-name="com.qa.Listeners.Util.ExtentReportListener" />
+		<listener
+			class-name="com.qa.Listeners.Util.TestAllureListener" />
+
+		<!-- <listener
+			class-name="com.qa.opencart.listeners.AnnotationTransformer" />-->
+
+	</listeners>
+	<!-- <test name="Test1">
+		<classes>
+		<class name="com.qa.demoCart.tests.RegistrationPageTest" />
+		</classes>
+	</test> 
+	<test name="Test2">
+		<classes>
+		<class name="com.qa.demoCart.tests.AccountPageTest" />
+		</classes>
+	</test> -->
+	<test name="Test3">
+		<classes>
+		<class name="com.qa.demoCart.tests.RegistationTestDataProvider" />
+		</classes>
+	</test> 
+	
+	
+	
+	<!-- Test -->
+</suite> <!-- Suite -->
